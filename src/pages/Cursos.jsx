@@ -6,17 +6,17 @@ export default function Cursos() {
     {
       title: "Producción Musical",
       description: "Cursos prácticos de producción musical aplicando técnicas profesionales.",
-      image: "/curso1.webp", // cambia por tus imágenes
+      image: "/diegogog.webp", // cambia por tus imágenes
     },
     {
       title: "Arreglos y Composición",
       description: "Aprende a crear arreglos y composiciones adaptadas a distintos estilos.",
-      image: "/curso2.webp",
+      image: "/dando calses.webp",
     },
     {
       title: "Orquestación",
       description: "Domina la orquestación y cómo organizar instrumentos para lograr un sonido profesional.",
-      image: "/curso3.webp",
+      image: "/enseñando.webp",
     },
   ];
 
@@ -38,7 +38,7 @@ export default function Cursos() {
             <img
               src={curso.image}
               alt={curso.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-contain"
             />
             <div className="p-4 text-white  flex flex-col flex-grow">
               <h3 className="text-2xl font-semibold mb-2">{curso.title}</h3>

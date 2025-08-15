@@ -11,7 +11,7 @@ export default function Biografia() {
         {/* Foto */}
         <div className="md:w-1/3 mb-8 md:mb-0">
           <img
-            src="/diego_bio.webp" // cámbiala por tu imagen
+            src="/maradona.webp" // cámbiala por tu imagen
             alt="Diego-Sounds"
             className="w-full h-auto rounded-xl shadow-2xl object-cover"
           />
