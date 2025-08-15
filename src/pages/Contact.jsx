@@ -5,7 +5,7 @@ export default function Contact() {
     <section className="bg-black text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-12">
             {/* Formulario */}
       <form
-        action="https://formspree.io/f/your_form_id" // reemplaza con tu ID
+        action="https://formspree.io/f/xyzpvkgv" // reemplaza con tu ID
         method="POST"
         className="md:w-1/2 bg-gray-900 p-6 rounded-lg shadow-lg w-full"
       >
@@ -48,14 +48,24 @@ export default function Contact() {
           Enviar
         </button>
       </form>
-       {/* Imagen al lado */}
-      <div className="md:w-1/2 mb-8 md:mb-0">
-        <img
-          src="/contact-image.jpg" // aquí cambias por tu imagen
-          alt="Contacto"
-          className="w-full h-auto rounded-lg shadow-lg"
-        />
-      </div>
+      {/* Imagen al lado */}
+        <div className="md:w-1/2 mb-8 md:mb-0 flex flex-col items-center text-center">
+          <p className="text-white mb-4">
+            Llena el formulario o envíame un mensaje por WhatsApp para solicitar cualquier trabajo
+          </p>
+          <img
+            src="/fondo_diego.webp" // cambia por tu imagen
+            alt="Contacto"
+            className="w-full h-auto rounded-lg shadow-lg"
+            style={{
+              WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 100%)",
+              WebkitMaskRepeat: "no-repeat",
+              WebkitMaskPosition: "center",
+              WebkitMaskSize: "100% 100%",
+            }}
+          />
+        </div>
+
     </section>
   );
 }
